@@ -1,0 +1,96 @@
+[
+  {
+    "id": "GS1",
+    "pregunta": "¿Cuántos días puedo tener en préstamo un libro de la colección general?",
+    "debe_contener": [
+      [
+        "7 días",
+        "siete días"
+      ]
+    ],
+    "tool_esperada": "buscar_reglamento"
+  },
+  {
+    "id": "GS8",
+    "pregunta": "Me llamo Abraham y soy estudiante de Duoc UC, ¿cómo puedo pedir un libro prestado y cuánto tiempo tengo para entregarlo?",
+    "debe_contener": [
+      [
+        "7 días",
+        "siete días"
+      ]
+    ],
+    "tool_esperada": "buscar_reglamento",
+    "nota": "Caso real que se derivó por error con el chunking del EP1 (Art. 11° y 15°)."
+  },
+  {
+    "id": "GS2",
+    "pregunta": "Soy alumno y devolví 1 libro con 14 días de atraso, ¿cuánto debo pagar?",
+    "debe_contener": [
+      [
+        "2.000",
+        "2000"
+      ]
+    ],
+    "tool_esperada": "calcular_multa"
+  },
+  {
+    "id": "GS3",
+    "pregunta": "Soy usuario externo de una institución en convenio y me atrasé 10 días, ¿tengo que pagar multa?",
+    "debe_contener": [
+      [
+        "intern"
+      ]
+    ],
+    "tool_esperada": "buscar_reglamento"
+  },
+  {
+    "id": "GS4",
+    "pregunta": "¿Cuántas horas al día puedo reservar una sala de estudio?",
+    "debe_contener": [
+      [
+        "una hora",
+        "1 hora",
+        "una (1) hora"
+      ]
+    ],
+    "tool_esperada": "buscar_reglamento"
+  },
+  {
+    "id": "GS5",
+    "pregunta": "¿La biblioteca vende café o snacks?",
+    "debe_contener": [
+      [
+        "encargado",
+        "DER-"
+      ]
+    ],
+    "tool_esperada": "buscar_reglamento"
+  },
+  {
+    "id": "GS6",
+    "pregunta": "Soy alumno. Perdí un libro y además devolví otro con 7 días de atraso. ¿Qué tengo que hacer con el perdido y cuánto pago por el atrasado?",
+    "debe_contener": [
+      [
+        "20 días hábiles"
+      ],
+      [
+        "1.000",
+        "1000"
+      ]
+    ],
+    "modo_esperado": "plan"
+  },
+  {
+    "id": "GS7",
+    "previo": "Hola, soy alumna regular de Duoc UC, o sea usuaria interna.",
+    "pregunta": "Me atrasé 21 días con 1 libro, ¿cuánto pago?",
+    "debe_contener": [
+      [
+        "3.000",
+        "3000"
+      ]
+    ],
+    "tool_esperada": "calcular_multa",
+    "nota": "El dato 'interno' se entrega en otra sesión: prueba la memoria de largo plazo."
+  }
+]
