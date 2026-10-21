@@ -58,7 +58,7 @@ El agente elige la herramienta leyendo el nombre, los tipos de los parámetros y
 ## Estructura
 
 ```
-Rag_Reglamento_Biblioteca/
+Agente_Rag_Biblioteca/
 ├── app.py                        # Interfaz Streamlit
 ├── src/biblioteca_agent/
 │   ├── config.py                 # Configuración desde .env
@@ -85,8 +85,8 @@ Rag_Reglamento_Biblioteca/
 Requisitos: Python 3.10 o superior, la API key de OpenRouter del grupo y una API key de Mistral (embeddings).
 
 ```bash
-git clone https://github.com/Abraham1439/Rag_Reglamento_Biblioteca.git
-cd Rag_Reglamento_Biblioteca
+git clone https://github.com/Abraham1439/Agente_Rag_Biblioteca.git
+cd Agente_Rag_Biblioteca
 
 # Crear y activar entorno virtual
 python -m venv .venv
