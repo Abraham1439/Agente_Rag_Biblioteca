@@ -17,7 +17,7 @@ El alcance sigue siendo informativo: no realiza préstamos, reservas ni pagos, y
 
 ## Arquitectura
 
-![Diagrama de componentes](docs/img/componentes.png)
+![Arquitectura](docs/img/arquitectura.png)
 
 Diagramas de secuencia, tabla de decisiones y registro de decisiones (ADR) en [`docs/arquitectura.md`](docs/arquitectura.md).
 
