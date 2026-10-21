@@ -93,10 +93,7 @@ with st.sidebar:
     if not tickets:
         st.caption("Sin derivaciones.")
 
-    st.divider()
-    st.caption(f"Modelo: `{settings.llm_model}` · esfuerzo `{settings.llm_reasoning_effort}`  \n"
-               f"Memoria corto plazo: ventana k={settings.memory_window_k}  \n"
-               f"RAG: top_k={settings.top_k}, umbral={settings.score_threshold}")
+    
 
 agente = BibliotecaAgent(settings, llm, retriever, usuario=usuario, session_id=st.session_state.session_id)
 
