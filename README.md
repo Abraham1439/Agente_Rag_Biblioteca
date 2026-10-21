@@ -175,4 +175,4 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 
 ## Uso de Inteligencia Artificial
 
-> **Se uso claude opus para la creacion de los diagramas y chatgpt para la estructuracion del proyecto** 
+> **Se uso claude opus como apoyo para generar el código base del agente y la creacion de los diagramas y chatgpt para la estructuracion del proyecto** 
