@@ -175,4 +175,4 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 
 ## Uso de Inteligencia Artificial
 
-> **Completar por el equipo:** declarar qué herramientas de IA se usaron y para qué, según la pauta (https://bibliotecas.duoc.cl/ia).
+> **Se uso claude opus para la creacion de los diagramas y chatgpt para la estructuracion del proyecto** 
