@@ -14,12 +14,16 @@ en el prompt de sistema, por lo que sobrevive entre conversaciones.
 from __future__ import annotations
 
 import json
+import threading
+import uuid
 from datetime import datetime
 from pathlib import Path
 
 from langchain_classic.memory import ConversationBufferWindowMemory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.messages import BaseMessage, messages_from_dict, messages_to_dict
+
+from .seguridad import enmascarar, valor_memoria_seguro
 
 
 def _leer_json(path: Path, defecto):
@@ -33,9 +37,22 @@ def _leer_json(path: Path, defecto):
 
 def _escribir_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(".tmp")
+    # Nombre temporal único: dos hilos que escriben a la vez no comparten el mismo .tmp (EP3).
+    tmp = path.with_suffix(f".{uuid.uuid4().hex[:8]}.tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(path)  # escritura atómica: evita archivos a medio escribir
+
+
+_locks: dict[str, threading.RLock] = {}
+_locks_guard = threading.Lock()
+
+
+def _lock(path: Path) -> threading.RLock:
+    """Un lock por archivo: serializa el ciclo leer-modificar-escribir dentro del proceso (EP3).
+    Con varios procesos o servidores haría falta una base de datos (ver propuesta de escalabilidad)."""
+    clave = str(Path(path).resolve())
+    with _locks_guard:
+        return _locks.setdefault(clave, threading.RLock())
 
 
 # --------------------------------------------------------------------------
@@ -52,9 +69,10 @@ class JsonChatMessageHistory(BaseChatMessageHistory):
         return messages_from_dict(_leer_json(self.path, []))
 
     def add_messages(self, messages: list[BaseMessage]) -> None:
-        data = _leer_json(self.path, [])
-        data.extend(messages_to_dict(messages))
-        _escribir_json(self.path, data)
+        with _lock(self.path):
+            data = _leer_json(self.path, [])
+            data.extend(messages_to_dict(messages))
+            _escribir_json(self.path, data)
 
     def clear(self) -> None:
         _escribir_json(self.path, [])
@@ -87,10 +105,15 @@ DATOS_PERMITIDOS = {
 
 
 class LongTermMemory:
-    """Datos del usuario que persisten entre conversaciones."""
+    """Datos del usuario que persisten entre conversaciones.
 
-    def __init__(self, path: Path):
+    EP3 · `validar_valores` (agente v2): rechaza valores con instrucciones, datos personales o
+    demasiado largos. Sin esa validación (v1, EP2), un usuario puede guardar una instrucción
+    como "carrera" y el agente la recibe en su prompt de sistema en cada conversación futura."""
+
+    def __init__(self, path: Path, validar_valores: bool = False):
         self.path = Path(path)
+        self.validar_valores = validar_valores
 
     def obtener(self, usuario: str) -> dict:
         return _leer_json(self.path, {}).get(usuario, {}).get("datos", {})
@@ -102,21 +125,25 @@ class LongTermMemory:
                 f"Dato '{dato}' no permitido. Solo se pueden guardar: {', '.join(DATOS_PERMITIDOS)}"
             )
         valor = valor.strip()
+        if self.validar_valores and (motivo := valor_memoria_seguro(valor)):
+            raise ValueError(f"No se guardó '{dato}': {motivo}.")
         if dato == "tipo_usuario":
             valor = valor.lower()
             if valor not in {"interno", "externo"}:
                 raise ValueError("tipo_usuario debe ser 'interno' o 'externo'")
-        data = _leer_json(self.path, {})
-        registro = data.setdefault(usuario, {"datos": {}})
-        registro["datos"][dato] = valor
-        registro["actualizado"] = datetime.now().isoformat(timespec="seconds")
-        _escribir_json(self.path, data)
-        return registro["datos"]
+        with _lock(self.path):
+            data = _leer_json(self.path, {})
+            registro = data.setdefault(usuario, {"datos": {}})
+            registro["datos"][dato] = valor
+            registro["actualizado"] = datetime.now().isoformat(timespec="seconds")
+            _escribir_json(self.path, data)
+        return dict(registro["datos"])
 
     def olvidar(self, usuario: str) -> None:
-        data = _leer_json(self.path, {})
-        data.pop(usuario, None)
-        _escribir_json(self.path, data)
+        with _lock(self.path):
+            data = _leer_json(self.path, {})
+            data.pop(usuario, None)
+            _escribir_json(self.path, data)
 
     def como_texto(self, usuario: str) -> str:
         datos = self.obtener(usuario)
@@ -129,18 +156,30 @@ class LongTermMemory:
 # Derivaciones (escritura): tickets para un encargado de biblioteca
 # --------------------------------------------------------------------------
 class DerivacionStore:
-    def __init__(self, path: Path):
-        self.path = Path(path)
+    """Tickets para un encargado.
 
-    def registrar(self, usuario: str, consulta: str, motivo: str) -> dict:
+    EP3 · `seguro` (agente v2): el ID es único aunque dos procesos escriban a la vez (en v1 se
+    calcula con len(data) + 1 y puede repetirse) y la consulta se guarda con la PII enmascarada.
+    Ambas versiones guardan el trace_id para poder auditar qué turno creó cada ticket."""
+
+    def __init__(self, path: Path, seguro: bool = False):
+        self.path = Path(path)
+        self.seguro = seguro
+
+    def registrar(self, usuario: str, consulta: str, motivo: str, trace_id: str | None = None) -> dict:
+        with _lock(self.path):
+            return self._registrar(usuario, consulta, motivo, trace_id)
+
+    def _registrar(self, usuario: str, consulta: str, motivo: str, trace_id: str | None) -> dict:
         data = _leer_json(self.path, [])
         ticket = {
-            "id": f"DER-{len(data) + 1:04d}",
+            "id": f"DER-{uuid.uuid4().hex[:8].upper()}" if self.seguro else f"DER-{len(data) + 1:04d}",
             "fecha": datetime.now().isoformat(timespec="seconds"),
             "usuario": usuario,
-            "consulta": consulta,
-            "motivo": motivo,
+            "consulta": enmascarar(consulta) if self.seguro else consulta,
+            "motivo": enmascarar(motivo) if self.seguro else motivo,
             "estado": "pendiente",
+            "trace_id": trace_id,
         }
         data.append(ticket)
         _escribir_json(self.path, data)

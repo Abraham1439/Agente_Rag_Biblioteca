@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "¿Cuántos libros puedo llevarme a la casa como alumno y por cuánto tiempo puedo usar los lentes VR al día?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el Artículo 14°, préstamo a domicilio. Según el Artículo 33°, no está permitido consumir alimentos ni bebidas mientras se utilicen los lentes de realidad virtual, con el fin de resguardar su correcto funcionamiento y la seguridad del usuario.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

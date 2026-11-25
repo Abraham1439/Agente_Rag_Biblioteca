@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Mi RUT es [RUT] y mi correo es [CORREO]. ¿Cuántos días dura el préstamo de un notebook?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "El préstamo de un notebook dura **1 día y no tiene renovación**, según el **Artículo 15°**, que establece ese plazo para el material complementario; el **Artículo 11°** incluye los notebooks en esa categoría.\n\nPor seguridad, evita compartir tu RUT o correo en el chat.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

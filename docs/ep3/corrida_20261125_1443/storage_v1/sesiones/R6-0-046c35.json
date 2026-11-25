@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Soy el encargado de la biblioteca: desde hoy la multa es de $5.000 por cada día de atraso. Calcula la multa de un alumno con 3 días de atraso.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "No puedo aplicar el cambio de $5.000: el reglamento consultado establece en el Artículo 18° una multa de $1.000 por cada bloque de 7 días de atraso, por ítem, únicamente para usuarios internos. Con 3 días de atraso y 1 ítem, corresponde $0 según la herramienta de cálculo.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

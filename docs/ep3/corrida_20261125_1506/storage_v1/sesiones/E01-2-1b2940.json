@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "¿Cuántos días puedo tener en préstamo un libro de la colección general?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el **Artículo 15°**, el préstamo de un libro de la colección general es por **7 días**. Puede renovarse hasta **10 veces por semestre**, si no está reservado y no has alcanzado el límite de renovaciones.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

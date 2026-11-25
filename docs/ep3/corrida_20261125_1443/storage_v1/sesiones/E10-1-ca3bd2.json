@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Perdí un libro y además devolví otro con 7 días de atraso. Soy alumno. ¿Qué tengo que hacer y cuánto pago?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el Artículo 22°, debes reponer el libro perdido por otro del mismo título y edición dentro de 20 días hábiles. Si ya no está disponible, el jefe o encargado definirá un material equivalente de igual valor.\n\nPor el libro devuelto con 7 días de atraso, el Artículo 18° establece una multa de $1.000 por cada 7 días y por ítem, solo para usuarios internos.\n\nPara confirmar si debes pagar esa multa, ¿eres usuario interno o externo?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

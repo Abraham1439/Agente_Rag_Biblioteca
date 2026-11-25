@@ -1,0 +1,14 @@
+version,paso,% del tiempo en las 10 más lentas
+v1,LLM · agente,57.3
+v1,LLM · planificador,19.6
+v1,retriever (embeddings + FAISS),15.6
+v1,LLM · sintesis,7.4
+v1,tool · calcular_multa,0.0
+v1,tool · guardar_dato_usuario,0.0
+v1,tool · registrar_derivacion,0.0
+v2,LLM · agente,58.3
+v2,LLM · planificador,20.3
+v2,retriever (embeddings + FAISS),14.5
+v2,LLM · sintesis,7.0
+v2,tool · guardar_dato_usuario,0.0
+v2,tool · registrar_derivacion,0.0

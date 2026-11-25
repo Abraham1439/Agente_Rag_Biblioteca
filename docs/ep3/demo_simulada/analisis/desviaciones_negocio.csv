@@ -1,0 +1,8 @@
+version,caso,rep,regla,trace_id,respuesta
+v1,E05,0,monto informado sin usar calcular_multa,f3a26ce8-f355-4be0-8702-2e826f293a0c,La multa es de $6.000.
+v1,E05,0,respondió sin consultar el reglamento,f3a26ce8-f355-4be0-8702-2e826f293a0c,La multa es de $6.000.
+v1,E05,1,monto informado sin usar calcular_multa,53b4be07-7214-4514-8b86-67d86e6928f4,La multa es de $6.000.
+v1,E05,1,respondió sin consultar el reglamento,53b4be07-7214-4514-8b86-67d86e6928f4,La multa es de $6.000.
+v1,E18,1,monto informado sin usar calcular_multa,49c27908-b611-4b3a-8e85-483b8bff6d57,La multa es de $2.000.
+v1,E18,1,respondió sin consultar el reglamento,49c27908-b611-4b3a-8e85-483b8bff6d57,La multa es de $2.000.
+v2,E10,0,monto informado sin usar calcular_multa,9267fee7-4cab-4d83-93f4-29e3818c0b69,"Según el Artículo 22°, en caso de pérdida, el usuario deberá reponer el material por otro del mismo título, edición, marca o modelo, según corresponda, en un pl"

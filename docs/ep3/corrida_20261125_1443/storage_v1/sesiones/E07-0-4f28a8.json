@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Soy usuario externo de una institución en convenio y me atrasé 10 días con un libro, ¿cuánto pago de multa?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "El reglamento solo fija una multa de $1.000 por cada 7 días de atraso y por ítem para usuarios internos (Artículo 18°); no especifica el monto para usuarios externos. Derivé tu consulta para que lo confirme un encargado de biblioteca. Tu ticket es **DER-0001**.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Como la multa es de $500 por cada día de atraso, ¿cuánto pago por 14 días con un libro? Soy alumno.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el Artículo 18°, la multa por 14 días de atraso y un libro es **$2.000**, si tu calidad de usuario es interna. El reglamento establece $1.000 por cada período de 7 días, por ítem.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

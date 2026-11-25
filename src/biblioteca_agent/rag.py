@@ -13,6 +13,9 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import threading
+import unicodedata
+from collections import OrderedDict
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -21,6 +24,7 @@ from langchain_core.embeddings import Embeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from .config import Settings
+from .observabilidad import span_actual
 
 DOCUMENT_TYPES = {
     "reglamento_general.txt": "reglamento_general",
@@ -144,13 +148,32 @@ def huella_indice(settings: Settings) -> str:
     return h.hexdigest()[:16]
 
 
+def normalizar_consulta(consulta: str) -> str:
+    """Clave de caché: minúsculas, sin tildes ni signos y con espacios simples."""
+    sin_tildes = unicodedata.normalize("NFKD", consulta.lower())
+    sin_tildes = "".join(c for c in sin_tildes if not unicodedata.combining(c))
+    return " ".join(re.findall(r"\w+", sin_tildes))
+
+
 class ReglamentoRetriever:
-    """Envuelve el índice FAISS y aplica el umbral de recuperación."""
+    """Envuelve el índice FAISS y aplica el umbral de recuperación.
+
+    EP3: cada búsqueda deja un span "retriever" en la traza del turno. Con `usar_cache`
+    (agente v2) las consultas repetidas no vuelven a llamar a la API de embeddings."""
+
+    MAX_CACHE = 512
 
     def __init__(self, vectorstore, top_k: int, threshold: float):
         self.vectorstore = vectorstore
         self.top_k = top_k
         self.threshold = threshold
+        self.usar_cache = False
+        self._cache: OrderedDict[str, list] = OrderedDict()
+        self._lock = threading.Lock()
+
+    def limpiar_cache(self) -> None:
+        with self._lock:
+            self._cache.clear()
 
     @classmethod
     def from_settings(cls, settings: Settings, embeddings: Embeddings | None = None,
@@ -175,12 +198,31 @@ class ReglamentoRetriever:
         return cls(vs, settings.top_k, settings.score_threshold)
 
     def buscar(self, consulta: str) -> list[Fragmento]:
-        resultados = self.vectorstore.similarity_search_with_score(consulta, k=self.top_k)
-        return [
-            Fragmento(doc.page_content, doc.metadata.get("fuente", "desconocida"), score_from_distance(d),
-                      doc.metadata.get("articulo", ""))
-            for doc, d in resultados
-        ]
+        clave = normalizar_consulta(consulta)
+        with span_actual("retriever", "faiss + embeddings", consulta=consulta[:200]) as extra:
+            with self._lock:
+                en_cache = self._cache.get(clave) if self.usar_cache else None
+                if en_cache is not None:
+                    self._cache.move_to_end(clave)
+            if en_cache is not None:
+                fragmentos = en_cache
+            else:
+                resultados = self.vectorstore.similarity_search_with_score(consulta, k=self.top_k)
+                fragmentos = [
+                    Fragmento(doc.page_content, doc.metadata.get("fuente", "desconocida"), score_from_distance(d),
+                              doc.metadata.get("articulo", ""))
+                    for doc, d in resultados
+                ]
+                if self.usar_cache:
+                    with self._lock:
+                        self._cache[clave] = fragmentos
+                        while len(self._cache) > self.MAX_CACHE:
+                            self._cache.popitem(last=False)
+            extra.update(cache_hit=en_cache is not None,
+                         mejor_score=round(max((f.score for f in fragmentos), default=0.0), 3),
+                         articulos=[f.articulo for f in fragmentos],
+                         sobre_umbral=self.hay_respaldo(fragmentos))
+        return fragmentos
 
     def hay_respaldo(self, fragmentos: list[Fragmento]) -> bool:
         return bool(fragmentos) and max(f.score for f in fragmentos) >= self.threshold

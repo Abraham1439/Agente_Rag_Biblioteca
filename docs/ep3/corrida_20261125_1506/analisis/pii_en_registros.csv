@@ -1,0 +1,13 @@
+version,archivo,dato,apariciones
+v1,eventos.log,RUT,5
+v1,eventos.log,correo,3
+v1,eventos.log,teléfono,1
+v1,historial de sesiones,RUT,5
+v1,historial de sesiones,correo,3
+v1,historial de sesiones,teléfono,1
+v1,spans.jsonl,RUT,10
+v1,spans.jsonl,correo,6
+v1,spans.jsonl,teléfono,2
+v1,trazas.jsonl,RUT,5
+v1,trazas.jsonl,correo,3
+v1,trazas.jsonl,teléfono,1

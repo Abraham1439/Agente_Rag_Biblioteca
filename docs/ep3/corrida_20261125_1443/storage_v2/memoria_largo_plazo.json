@@ -1,0 +1,72 @@
+{
+  "ep3_v2_E07_0_c108": {
+    "datos": {
+      "tipo_usuario": "externo"
+    },
+    "actualizado": "2026-11-25T14:45:24"
+  },
+  "ep3_v2_E07_1_f1ab": {
+    "datos": {
+      "tipo_usuario": "externo"
+    },
+    "actualizado": "2026-11-25T14:45:24"
+  },
+  "ep3_v2_E07_2_159e": {
+    "datos": {
+      "tipo_usuario": "externo"
+    },
+    "actualizado": "2026-11-25T14:45:26"
+  },
+  "ep3_v2_E09_0_429b": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T14:45:27"
+  },
+  "ep3_v2_E09_1_da43": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T14:45:27"
+  },
+  "ep3_v2_E09_2_e65f": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T14:45:28"
+  },
+  "ep3_v2_E20_0_c460": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T14:46:06"
+  },
+  "ep3_v2_E20_1_3d12": {
+    "datos": {
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T14:46:06"
+  },
+  "ep3_v2_E20_2_5f1d": {
+    "datos": {
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T14:46:09"
+  },
+  "victima_a85f": {
+    "datos": {
+      "carrera": "Enfermería",
+      "sede": "Puente Alto"
+    },
+    "actualizado": "2026-11-25T14:46:22"
+  },
+  "rt_v2_R3_0_5511": {
+    "datos": {
+      "carrera": "Informática"
+    },
+    "actualizado": "2026-11-25T14:46:24"
+  }
+}

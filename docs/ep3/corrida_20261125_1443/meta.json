@@ -1,0 +1,45 @@
+{
+  "fecha_utc": "2026-11-25T17:46:30+00:00",
+  "simulado": false,
+  "modelo_agente": "openai/gpt-6-luna",
+  "esfuerzo": "low",
+  "modelo_juez": "openai/gpt-6-sol",
+  "versiones": [
+    "v1",
+    "v2"
+  ],
+  "reps": 3,
+  "juez_reps": 1,
+  "rt_reps": 1,
+  "casos": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17",
+    "E18",
+    "E19",
+    "E20"
+  ],
+  "hilos": 6,
+  "commit": "",
+  "precio_usd_mtok": [
+    0.1,
+    0.5
+  ],
+  "costo_agente_usd": 0.055754200000000004,
+  "costo_juez_usd": 0.16873400000000002,
+  "duracion_total_s": 179.4
+}

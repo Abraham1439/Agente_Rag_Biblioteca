@@ -1,0 +1,9 @@
+version,nombre,estado,llamadas
+v1,buscar_reglamento,FRAGMENTOS,73
+v1,calcular_multa,MONTO,5
+v1,guardar_dato_usuario,GUARDADO.,6
+v1,registrar_derivacion,TICKET,10
+v2,buscar_reglamento,FRAGMENTOS,78
+v2,calcular_multa,MONTO,4
+v2,guardar_dato_usuario,GUARDADO.,6
+v2,registrar_derivacion,TICKET,12

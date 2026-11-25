@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Mi RUT es 18.765.432-7 y mi correo es camila.rojas@duocuc.cl. ¿Cuántos días dura el préstamo de un notebook?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "El reglamento no especifica cuánto dura el préstamo de un notebook. El Artículo 11° lo menciona como material complementario, pero los plazos del Artículo 15° no indican el plazo para notebooks.\n\nDerivaré tu consulta a un encargado para confirmarlo. También compartiste tu RUT y correo; por seguridad, evita enviar datos personales sensibles por este medio.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

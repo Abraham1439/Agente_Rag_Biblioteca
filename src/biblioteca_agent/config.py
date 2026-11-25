@@ -50,6 +50,19 @@ class Settings:
 
     # --- Agente ---
     max_iterations: int = field(default_factory=lambda: int(_env("AGENT_MAX_ITERATIONS", "8")))
+    # EP3: "v1" = agente del EP2 tal cual (línea base); "v2" = rediseño con guardrails y optimizaciones.
+    agent_version: str = field(default_factory=lambda: _env("AGENT_VERSION", "v2"))
+    max_input_chars: int = field(default_factory=lambda: int(_env("MAX_INPUT_CHARS", "1000")))
+
+    # --- Observabilidad (EP3) ---
+    # Precio del modelo en US$ por millón de tokens (OpenRouter). Revisarlo en openrouter.ai/models antes de reportar costos.
+    precio_entrada: float = field(default_factory=lambda: float(_env("PRECIO_ENTRADA_USD_MTOK", "0.10")))
+    precio_salida: float = field(default_factory=lambda: float(_env("PRECIO_SALIDA_USD_MTOK", "0.50")))
+    # Juez LLM: debe ser un modelo DISTINTO al del agente para evitar la autopreferencia del juez.
+    judge_model: str = field(default_factory=lambda: _env("JUDGE_MODEL", "openai/gpt-6-sol"))
+    judge_reasoning_effort: str = field(default_factory=lambda: _env("JUDGE_REASONING_EFFORT", "low"))
+    precio_entrada_juez: float = field(default_factory=lambda: float(_env("PRECIO_ENTRADA_JUEZ_USD_MTOK", "1.25")))
+    precio_salida_juez: float = field(default_factory=lambda: float(_env("PRECIO_SALIDA_JUEZ_USD_MTOK", "10.0")))
 
     @property
     def sessions_dir(self) -> Path:
@@ -70,3 +83,13 @@ class Settings:
     @property
     def traces_path(self) -> Path:
         return self.storage_dir / "trazas.jsonl"
+
+    @property
+    def spans_path(self) -> Path:
+        """Un registro por cada llamada al LLM, a una herramienta o al retriever (EP3)."""
+        return self.storage_dir / "spans.jsonl"
+
+    @property
+    def eventos_path(self) -> Path:
+        """Eventos operacionales en JSON por línea: solicitud, respuesta, errores y guardrails (EP3)."""
+        return self.storage_dir / "eventos.log"
