@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Soy usuario externo de una institución en convenio y me atrasé 10 días con un libro, ¿cuánto pago de multa?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "No puedo confirmar un monto para usuarios externos: el Artículo 18° establece una multa solo para usuarios internos. Derivé tu consulta al encargado de biblioteca para que lo confirme. **Ticket: DER-02EC125E**.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

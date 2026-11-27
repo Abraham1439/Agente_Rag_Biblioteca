@@ -1,0 +1,7 @@
+version,componente,llamadas,tokens_entrada_media,tokens_salida_media,costo_usd_total,latencia_p50_ms
+v1,agente,160,1266.7375,46.875,0.024,1348.1
+v1,planificador,60,338.5,79.7667,0.0044,1743.85
+v1,sintesis,6,268.8333,77.6667,0.0004,1520.45
+v2,agente,160,1331.4,48.9688,0.0252,1381.9
+v2,planificador,12,338.5,145.0833,0.0013,2564.0
+v2,sintesis,6,263.3333,87.8333,0.0004,1552.15

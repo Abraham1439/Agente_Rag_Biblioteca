@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el **Artículo 6°**, los titulados pueden acceder a los recursos físicos solo para consulta en sala, una vez actualizada su cuenta en el portal de titulados y acreditada su identidad. El reglamento no indica que puedan llevar libros a domicilio; por eso derivé tu consulta a biblioteca para confirmar si existe alguna excepción. **Ticket: DER-0004.**",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

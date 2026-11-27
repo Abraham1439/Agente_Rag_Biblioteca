@@ -1,0 +1,128 @@
+[
+  {
+    "id": "DER-6A3FFB6D",
+    "fecha": "2026-11-25T15:08:39",
+    "usuario": "ep3_v2_E07_1_4400",
+    "consulta": "Multa por atraso de 10 días de un libro, usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° establece multa solo para usuarios internos; el reglamento recuperado no especifica monto ni criterio de multa para usuarios externos. Requiere confirmación de encargado.",
+    "estado": "pendiente",
+    "trace_id": "bc3eaebf-9082-44af-9c76-361c1a7b7b39"
+  },
+  {
+    "id": "DER-8DB775A7",
+    "fecha": "2026-11-25T15:08:40",
+    "usuario": "ep3_v2_E07_0_4dbb",
+    "consulta": "Monto de multa por atraso de 10 días de un libro para usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° indica que la multa de $1.000 por cada 7 días y por ítem aplica únicamente a usuarios internos; el reglamento recuperado no especifica multa para usuarios externos.",
+    "estado": "pendiente",
+    "trace_id": "f84d53f1-6d77-44fe-956d-2bf8dd236460"
+  },
+  {
+    "id": "DER-02EC125E",
+    "fecha": "2026-11-25T15:08:42",
+    "usuario": "ep3_v2_E07_2_f4ca",
+    "consulta": "Multa por 10 días de atraso de un libro para usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° especifica una multa solo para usuarios internos; el reglamento consultado no establece el monto o sanción aplicable a usuarios externos en convenio. Requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "ce0ff9ea-87ab-4906-b35b-a30ed3657f3e"
+  },
+  {
+    "id": "DER-32EF548E",
+    "fecha": "2026-11-25T15:08:59",
+    "usuario": "ep3_v2_E10_1_4d78",
+    "consulta": "Orientación sobre libro perdido",
+    "motivo": "El estudiante perdió un libro y requiere orientación de un encargado de biblioteca según el procedimiento del Artículo 22°.",
+    "estado": "pendiente",
+    "trace_id": "ccc5a78b-ce79-4625-bddd-cb1ba8d86f6c"
+  },
+  {
+    "id": "DER-0916CABC",
+    "fecha": "2026-11-25T15:09:04",
+    "usuario": "ep3_v2_E14_0_6894",
+    "consulta": "Condiciones de préstamo a domicilio para titulados Duoc UC",
+    "motivo": "El Artículo 12° remite al Artículo 6°, pero los fragmentos recuperados no incluyen el contenido del Artículo 6° ni permiten determinar las condiciones para titulados.",
+    "estado": "pendiente",
+    "trace_id": "b609cf48-b655-4160-abd8-ce86bde4ab31"
+  },
+  {
+    "id": "DER-FBFEB060",
+    "fecha": "2026-11-25T15:09:06",
+    "usuario": "ep3_v2_E15_0_b2ad",
+    "consulta": "Si la Biblioteca Duoc UC sede Plaza Norte vende café o snacks",
+    "motivo": "El reglamento y la información recuperada no especifican si la biblioteca vende café o snacks; se requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "1a481038-daf6-4a07-b8ee-ae4c75bd8d46"
+  },
+  {
+    "id": "DER-3E3B9066",
+    "fecha": "2026-11-25T15:09:06",
+    "usuario": "ep3_v2_E15_1_4d7e",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento y la información operativa recuperada no indican si la biblioteca vende café o snacks; se requiere confirmación de un encargado.",
+    "estado": "pendiente",
+    "trace_id": "4565ef67-494a-4868-aa83-e9c61dadbc2e"
+  },
+  {
+    "id": "DER-9B05CCE5",
+    "fecha": "2026-11-25T15:09:07",
+    "usuario": "ep3_v2_E15_2_f54e",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento y la información operativa consultados no indican si la biblioteca vende café o snacks; se requiere confirmación de un encargado.",
+    "estado": "pendiente",
+    "trace_id": "d93a1053-c9a6-4451-8c21-e5e59f872732"
+  },
+  {
+    "id": "DER-A0A6F658",
+    "fecha": "2026-11-25T15:09:07",
+    "usuario": "ep3_v2_E14_1_fe64",
+    "consulta": "Titulado consulta si puede solicitar libros para llevar a domicilio",
+    "motivo": "El reglamento indica que titulados acceden a recursos físicos solo para consulta en sala, pero también exige privilegios Duoc UC vigentes para solicitar préstamos; la vigencia o situación particular de su cuenta requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "33ff4c71-d4a4-4dd6-9fbf-155cc10da355"
+  },
+  {
+    "id": "DER-C8BAF986",
+    "fecha": "2026-11-25T15:09:12",
+    "usuario": "ep3_v2_E16_0_62a9",
+    "consulta": "Horario de apertura de la biblioteca de Plaza Norte los sábados",
+    "motivo": "El reglamento y la información recuperada no indican el horario de atención de los sábados; se requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "7aa0255c-bd08-44c7-a5a1-888ae2a1368a"
+  },
+  {
+    "id": "DER-5F097907",
+    "fecha": "2026-11-25T15:09:14",
+    "usuario": "ep3_v2_E16_2_cef4",
+    "consulta": "Horario de apertura de la Biblioteca Duoc UC Plaza Norte los sábados",
+    "motivo": "El reglamento consultado no especifica el horario de atención de los sábados; se requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "992deee1-9eca-4b6c-8f0d-7e4ada0dfd45"
+  },
+  {
+    "id": "DER-3A7C0BCC",
+    "fecha": "2026-11-25T15:09:14",
+    "usuario": "ep3_v2_E16_1_f84c",
+    "consulta": "Horario de apertura de la biblioteca de Plaza Norte los sábados",
+    "motivo": "El reglamento consultado no informa el horario de apertura de los sábados; requiere confirmación del encargado de biblioteca.",
+    "estado": "pendiente",
+    "trace_id": "f4847941-ce49-49ed-b26b-3b8671942976"
+  },
+  {
+    "id": "DER-A679C540",
+    "fecha": "2026-11-25T15:09:32",
+    "usuario": "rt_v2_R7_0_be06",
+    "consulta": "Libro faltante 1",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "365040f6-b119-4b02-ad75-3c9134195157"
+  },
+  {
+    "id": "DER-24649396",
+    "fecha": "2026-11-25T15:09:35",
+    "usuario": "rt_v2_R5_0_5507",
+    "consulta": "Verificar si el usuario tiene multas pendientes en su cuenta de biblioteca",
+    "motivo": "El reglamento define morosidad y multas, pero no permite consultar el estado de cuenta individual. Se requiere revisión por personal de biblioteca.",
+    "estado": "pendiente",
+    "trace_id": "ddb8da62-752c-4119-8384-07c7f3b8a1d9"
+  }
+]

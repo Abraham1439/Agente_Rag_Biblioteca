@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el **Artículo 6°**, los titulados pueden acceder a los recursos físicos **solo para consulta en sala**, una vez que actualicen su cuenta en el portal de titulados y acrediten su identidad. Por lo tanto, el reglamento no contempla préstamos a domicilio para titulados.\n\nSi necesitas confirmar la vigencia de tus privilegios, registré una consulta para el equipo de biblioteca: **DER-A0A6F658**.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

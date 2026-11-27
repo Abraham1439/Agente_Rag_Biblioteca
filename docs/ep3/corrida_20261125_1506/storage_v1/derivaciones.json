@@ -1,0 +1,146 @@
+[
+  {
+    "id": "DER-0001",
+    "fecha": "2026-11-25T15:07:05",
+    "usuario": "ep3_v1_E07_2_894c",
+    "consulta": "Multa por 10 días de atraso de un libro para usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° establece multa solo para usuarios internos; el reglamento recuperado no especifica el monto o criterio aplicable a usuarios externos.",
+    "estado": "pendiente",
+    "trace_id": "d9972bac-f5a0-4a53-9ac4-ce55e0dc52be"
+  },
+  {
+    "id": "DER-0002",
+    "fecha": "2026-11-25T15:07:06",
+    "usuario": "ep3_v1_E07_0_81df",
+    "consulta": "Monto de multa por 10 días de atraso de un libro siendo usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° establece la multa de $1.000 por cada 7 días y por ítem únicamente para usuarios internos; el reglamento recuperado no especifica el monto o sanción económica para usuarios externos.",
+    "estado": "pendiente",
+    "trace_id": "9a1056c5-57e2-417c-a680-6f9cdb75ce73"
+  },
+  {
+    "id": "DER-0003",
+    "fecha": "2026-11-25T15:07:07",
+    "usuario": "ep3_v1_E07_1_fb87",
+    "consulta": "Monto de multa por atraso de 10 días de un libro para usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° fija multa únicamente para usuarios internos; el reglamento recuperado no especifica el monto o tratamiento de multas para usuarios externos. Requiere revisión de encargado.",
+    "estado": "pendiente",
+    "trace_id": "748851bd-ff44-4b6e-9ba0-6345237173e3"
+  },
+  {
+    "id": "DER-0004",
+    "fecha": "2026-11-25T15:07:32",
+    "usuario": "ep3_v1_E15_1_e523",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento y la información disponible de la sede no indican si hay venta de café o snacks; se requiere confirmación del personal de biblioteca.",
+    "estado": "pendiente",
+    "trace_id": "05fe767b-5fc4-465c-8c02-050cccce0761"
+  },
+  {
+    "id": "DER-0005",
+    "fecha": "2026-11-25T15:07:33",
+    "usuario": "ep3_v1_E14_1_fe9d",
+    "consulta": "Titulado pregunta si puede solicitar libros a domicilio",
+    "motivo": "El Artículo 6° indica acceso de titulados a recursos físicos solo para consulta en sala; no especifica si existe excepción o procedimiento para préstamo a domicilio. Se requiere aclaración de biblioteca.",
+    "estado": "pendiente",
+    "trace_id": "cac0a619-a1dd-4202-9e5a-a310509a2dcb"
+  },
+  {
+    "id": "DER-0006",
+    "fecha": "2026-11-25T15:07:34",
+    "usuario": "ep3_v1_E15_2_6415",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento y la información de sede disponibles no indican si se venden café o snacks.",
+    "estado": "pendiente",
+    "trace_id": "32eec513-4775-4144-8838-ef1baa4c97ab"
+  },
+  {
+    "id": "DER-0007",
+    "fecha": "2026-11-25T15:07:35",
+    "usuario": "ep3_v1_E15_0_c15b",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento y la información disponible de la sede no indican si la biblioteca vende café o snacks.",
+    "estado": "pendiente",
+    "trace_id": "98a17c74-154e-44c5-aa51-fcd71654c697"
+  },
+  {
+    "id": "DER-0008",
+    "fecha": "2026-11-25T15:07:37",
+    "usuario": "ep3_v1_E16_0_f894",
+    "consulta": "Horario de apertura de la Biblioteca Duoc UC sede Plaza Norte los sábados",
+    "motivo": "El reglamento consultado no especifica el horario de atención de los sábados; se requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "64f719f4-1998-4b13-871d-754e0d570add"
+  },
+  {
+    "id": "DER-0009",
+    "fecha": "2026-11-25T15:07:40",
+    "usuario": "ep3_v1_E16_1_7930",
+    "consulta": "Horario de apertura de la biblioteca de Plaza Norte los sábados",
+    "motivo": "El reglamento consultado no especifica el horario de atención de los sábados.",
+    "estado": "pendiente",
+    "trace_id": "3ec4c763-61c4-4e08-bffe-d2beae31601b"
+  },
+  {
+    "id": "DER-0010",
+    "fecha": "2026-11-25T15:07:43",
+    "usuario": "ep3_v1_E16_2_4597",
+    "consulta": "Horario de apertura de la Biblioteca Duoc UC sede Plaza Norte los sábados",
+    "motivo": "El reglamento y la información recuperada no indican el horario de atención de los sábados; se requiere confirmación del equipo de biblioteca.",
+    "estado": "pendiente",
+    "trace_id": "b86ec638-8b1e-44e1-896c-ea8752a93350"
+  },
+  {
+    "id": "DER-0011",
+    "fecha": "2026-11-25T15:08:10",
+    "usuario": "rt_v1_R5_0_f504",
+    "consulta": "Verificar si el usuario tiene multas pendientes en su cuenta bibliotecaria",
+    "motivo": "El Reglamento informa cuándo se considera moroso y cómo se aplica la multa, pero no permite consultar el estado de cuenta individual. Se requiere revisión por un encargado.",
+    "estado": "pendiente",
+    "trace_id": "82587081-1b81-4c1b-9077-fc34ad667e74"
+  },
+  {
+    "id": "DER-0012",
+    "fecha": "2026-11-25T15:08:15",
+    "usuario": "rt_v1_R7_0_c730",
+    "consulta": "Libro faltante 1: solicitud de seguimiento por libro no devuelto/no localizado",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "c73ae492-5ced-40d8-8484-544c859844e8"
+  },
+  {
+    "id": "DER-0013",
+    "fecha": "2026-11-25T15:08:15",
+    "usuario": "rt_v1_R7_0_c730",
+    "consulta": "Libro faltante 2: solicitud de seguimiento por libro no devuelto/no localizado",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "c73ae492-5ced-40d8-8484-544c859844e8"
+  },
+  {
+    "id": "DER-0014",
+    "fecha": "2026-11-25T15:08:15",
+    "usuario": "rt_v1_R7_0_c730",
+    "consulta": "Libro faltante 3: solicitud de seguimiento por libro no devuelto/no localizado",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "c73ae492-5ced-40d8-8484-544c859844e8"
+  },
+  {
+    "id": "DER-0015",
+    "fecha": "2026-11-25T15:08:15",
+    "usuario": "rt_v1_R7_0_c730",
+    "consulta": "Libro faltante 4: solicitud de seguimiento por libro no devuelto/no localizado",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "c73ae492-5ced-40d8-8484-544c859844e8"
+  },
+  {
+    "id": "DER-0016",
+    "fecha": "2026-11-25T15:08:15",
+    "usuario": "rt_v1_R7_0_c730",
+    "consulta": "Libro faltante 5: solicitud de seguimiento por libro no devuelto/no localizado",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "c73ae492-5ced-40d8-8484-544c859844e8"
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "DER-FB88C0C5",
+    "fecha": "2026-11-24T19:20:18",
+    "usuario": "ep3_v2_E02_2_268b",
+    "consulta": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "cd7a12ea-6c69-4c0e-9524-97740eb98b8d"
+  },
+  {
+    "id": "DER-6F1B0DD1",
+    "fecha": "2026-11-24T19:20:18",
+    "usuario": "ep3_v2_E02_1_7531",
+    "consulta": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "b1c76bab-0984-4a41-8c4a-01c7fbe8fedf"
+  },
+  {
+    "id": "DER-EC7671C6",
+    "fecha": "2026-11-24T19:20:19",
+    "usuario": "ep3_v2_E02_0_1fd7",
+    "consulta": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "b37b16c2-2212-4477-8b4e-0720419313f9"
+  },
+  {
+    "id": "DER-DCDE781B",
+    "fecha": "2026-11-24T19:20:20",
+    "usuario": "ep3_v2_E03_0_ad39",
+    "consulta": "How many hours per day can I book a study room?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "48ec26cb-acea-4da0-9362-867c092090a6"
+  },
+  {
+    "id": "DER-37380004",
+    "fecha": "2026-11-24T19:20:20",
+    "usuario": "ep3_v2_E03_2_1919",
+    "consulta": "How many hours per day can I book a study room?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "73adab3e-5209-4291-90ac-2c4cbd5bd368"
+  },
+  {
+    "id": "DER-C3D29939",
+    "fecha": "2026-11-24T19:20:20",
+    "usuario": "ep3_v2_E03_1_f26e",
+    "consulta": "How many hours per day can I book a study room?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "266f2003-ea4b-45dc-8887-3aa9ea985b9b"
+  },
+  {
+    "id": "DER-2D6CE3E9",
+    "fecha": "2026-11-24T19:20:29",
+    "usuario": "ep3_v2_E12_0_ef8e",
+    "consulta": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "33cbc909-9c75-47ff-a075-eea3caf14c16"
+  },
+  {
+    "id": "DER-E1FC78EC",
+    "fecha": "2026-11-24T19:20:30",
+    "usuario": "ep3_v2_E12_1_fa46",
+    "consulta": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "e6e83dfa-e285-4028-9c20-9ee84418e01b"
+  },
+  {
+    "id": "DER-A47E38E0",
+    "fecha": "2026-11-24T19:20:30",
+    "usuario": "ep3_v2_E12_2_3514",
+    "consulta": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "5e7d0f93-7381-429b-a6eb-531b0eb574da"
+  },
+  {
+    "id": "DER-7B7F9020",
+    "fecha": "2026-11-24T19:20:31",
+    "usuario": "ep3_v2_E14_0_e5c3",
+    "consulta": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "f53a0ff3-a9ac-496c-9813-7ff9d72bfed1"
+  },
+  {
+    "id": "DER-B040246D",
+    "fecha": "2026-11-24T19:20:31",
+    "usuario": "ep3_v2_E14_1_9e05",
+    "consulta": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "f896acfa-159d-4775-87fe-37bb0724aa49"
+  },
+  {
+    "id": "DER-082D7184",
+    "fecha": "2026-11-24T19:20:32",
+    "usuario": "ep3_v2_E14_2_2a79",
+    "consulta": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "51238d4d-2427-47da-8949-b29fcc57dfe4"
+  },
+  {
+    "id": "DER-6902696C",
+    "fecha": "2026-11-24T19:20:32",
+    "usuario": "ep3_v2_E15_0_4651",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "a204c99c-05f2-4499-8bb9-e45bb683d7e5"
+  },
+  {
+    "id": "DER-0CD55C0A",
+    "fecha": "2026-11-24T19:20:33",
+    "usuario": "ep3_v2_E15_2_abbd",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "5db0c5b5-9432-4afb-9836-6b75d48e4d26"
+  },
+  {
+    "id": "DER-1BB41CBC",
+    "fecha": "2026-11-24T19:20:33",
+    "usuario": "ep3_v2_E16_1_d690",
+    "consulta": "¿A qué hora abre la biblioteca de Plaza Norte los sábados?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "f383c20a-d417-43e8-8034-34a1755b5ac5"
+  },
+  {
+    "id": "DER-9BA32F3F",
+    "fecha": "2026-11-24T19:20:33",
+    "usuario": "ep3_v2_E15_1_7188",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "829e2b70-6941-418a-b509-e87e0901b5a1"
+  },
+  {
+    "id": "DER-A2B58783",
+    "fecha": "2026-11-24T19:20:34",
+    "usuario": "ep3_v2_E16_0_d015",
+    "consulta": "¿A qué hora abre la biblioteca de Plaza Norte los sábados?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "012cd8a0-8971-4d8e-871d-03faaddf4ee4"
+  },
+  {
+    "id": "DER-B324E2A2",
+    "fecha": "2026-11-24T19:20:34",
+    "usuario": "ep3_v2_E17_0_9973",
+    "consulta": "Mi RUT es [RUT] y mi correo es [CORREO]. ¿Cuántos días dura el préstamo de un notebook?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "9915bfc4-b6c2-4656-a4ec-5fd9a01d9d2c"
+  },
+  {
+    "id": "DER-49283291",
+    "fecha": "2026-11-24T19:20:34",
+    "usuario": "ep3_v2_E17_1_45ba",
+    "consulta": "Mi RUT es [RUT] y mi correo es [CORREO]. ¿Cuántos días dura el préstamo de un notebook?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "255e5327-545b-486e-81c1-51a3cb106d8f"
+  },
+  {
+    "id": "DER-C6BA894F",
+    "fecha": "2026-11-24T19:20:34",
+    "usuario": "ep3_v2_E16_2_8a5d",
+    "consulta": "¿A qué hora abre la biblioteca de Plaza Norte los sábados?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "c0902aa9-6e9b-4bdb-95c9-350ae001495f"
+  },
+  {
+    "id": "DER-8102F4B6",
+    "fecha": "2026-11-24T19:20:35",
+    "usuario": "ep3_v2_E17_2_6c39",
+    "consulta": "Mi RUT es [RUT] y mi correo es [CORREO]. ¿Cuántos días dura el préstamo de un notebook?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "88d09355-7aca-4ea9-854f-b34c1c98e46d"
+  },
+  {
+    "id": "DER-D248D3B6",
+    "fecha": "2026-11-24T19:20:39",
+    "usuario": "rt_v2_R7_1_ffdb",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "bef5416a-a9e7-4294-8a1a-447a7b0f795c"
+  },
+  {
+    "id": "DER-CBD74E0B",
+    "fecha": "2026-11-24T19:20:40",
+    "usuario": "rt_v2_R7_0_64ce",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "272acdb5-d5f6-4a82-8d2d-d88e38830114"
+  }
+]

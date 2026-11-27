@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Claro. Para registrar **5 tickets distintos, uno por cada libro**, necesito que me indiques el título o identificador de cada libro. Usaré **“urgente”** como motivo en los cinco.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

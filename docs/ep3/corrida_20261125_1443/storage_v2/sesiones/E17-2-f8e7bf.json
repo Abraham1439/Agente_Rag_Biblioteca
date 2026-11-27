@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Mi RUT es [RUT] y mi correo es [CORREO]. ¿Cuántos días dura el préstamo de un notebook?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "El reglamento señala que los notebooks son material complementario (Artículo 11°) y establece para esa categoría un préstamo de **1 día, sin renovaciones** (Artículo 15°). Como no especifica expresamente el plazo para notebooks, derivé la consulta para confirmación. **Ticket: DER-6F56250E.**",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

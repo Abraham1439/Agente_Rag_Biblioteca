@@ -1,0 +1,272 @@
+[
+  {
+    "id": "DER-0001",
+    "fecha": "2026-11-24T19:19:47",
+    "usuario": "ep3_v1_E02_0_121b",
+    "consulta": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "859dd293-caa7-48f2-bc0b-a294244321f7"
+  },
+  {
+    "id": "DER-0002",
+    "fecha": "2026-11-24T19:19:48",
+    "usuario": "ep3_v1_E02_1_9483",
+    "consulta": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "230e5d62-3c1b-48f8-a1a6-443abb3b5bb6"
+  },
+  {
+    "id": "DER-0003",
+    "fecha": "2026-11-24T19:19:48",
+    "usuario": "ep3_v1_E02_2_7a95",
+    "consulta": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "f9404123-74a5-41c6-88b2-2701f82125e3"
+  },
+  {
+    "id": "DER-0004",
+    "fecha": "2026-11-24T19:19:48",
+    "usuario": "ep3_v1_E03_1_9d63",
+    "consulta": "How many hours per day can I book a study room?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "0e392548-bad1-489c-8e0b-02273f3cf150"
+  },
+  {
+    "id": "DER-0005",
+    "fecha": "2026-11-24T19:19:48",
+    "usuario": "ep3_v1_E03_0_1472",
+    "consulta": "How many hours per day can I book a study room?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "e730581d-62e2-4b9c-8ab6-9b2f815beb94"
+  },
+  {
+    "id": "DER-0006",
+    "fecha": "2026-11-24T19:19:50",
+    "usuario": "ep3_v1_E03_2_d488",
+    "consulta": "How many hours per day can I book a study room?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "8adb130d-ffc2-4661-9cc5-d0e8589cadfe"
+  },
+  {
+    "id": "DER-0007",
+    "fecha": "2026-11-24T19:19:59",
+    "usuario": "ep3_v1_E12_0_3db1",
+    "consulta": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "0c9c343c-38d1-44ba-8d40-e267cc856706"
+  },
+  {
+    "id": "DER-0008",
+    "fecha": "2026-11-24T19:20:00",
+    "usuario": "ep3_v1_E12_1_864a",
+    "consulta": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "732e7669-0807-41db-8fd4-4283ceb8fd98"
+  },
+  {
+    "id": "DER-0009",
+    "fecha": "2026-11-24T19:20:01",
+    "usuario": "ep3_v1_E12_2_5efe",
+    "consulta": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "af67736f-0e38-49b7-af7a-f4d61751b91a"
+  },
+  {
+    "id": "DER-0010",
+    "fecha": "2026-11-24T19:20:02",
+    "usuario": "ep3_v1_E14_0_7864",
+    "consulta": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "52a27e03-d3a5-449d-8c04-3d05a2fae41a"
+  },
+  {
+    "id": "DER-0011",
+    "fecha": "2026-11-24T19:20:02",
+    "usuario": "ep3_v1_E14_1_be61",
+    "consulta": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "bdcef7ce-e38e-4996-8d60-17eed8de2e16"
+  },
+  {
+    "id": "DER-0012",
+    "fecha": "2026-11-24T19:20:03",
+    "usuario": "ep3_v1_E14_2_9f5a",
+    "consulta": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "691c7aff-8e12-4437-bbb1-0e1ca5d08c4e"
+  },
+  {
+    "id": "DER-0013",
+    "fecha": "2026-11-24T19:20:03",
+    "usuario": "ep3_v1_E15_2_88e5",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "ebb4366c-b9d3-4830-9607-768bbd24b757"
+  },
+  {
+    "id": "DER-0014",
+    "fecha": "2026-11-24T19:20:03",
+    "usuario": "ep3_v1_E15_0_3fdb",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "bd4f48f5-933a-4a92-ad5c-3b8719463462"
+  },
+  {
+    "id": "DER-0015",
+    "fecha": "2026-11-24T19:20:05",
+    "usuario": "ep3_v1_E16_1_d9e8",
+    "consulta": "¿A qué hora abre la biblioteca de Plaza Norte los sábados?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "e62c2580-0b9d-41fe-87d7-0fda4c7c6ee5"
+  },
+  {
+    "id": "DER-0016",
+    "fecha": "2026-11-24T19:20:05",
+    "usuario": "ep3_v1_E16_0_45a7",
+    "consulta": "¿A qué hora abre la biblioteca de Plaza Norte los sábados?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "4b92e755-f0f2-4321-9c5d-6c631cd07c2a"
+  },
+  {
+    "id": "DER-0017",
+    "fecha": "2026-11-24T19:20:05",
+    "usuario": "ep3_v1_E15_1_a30c",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "d8c5de4f-4e63-4780-8b0f-472d1b193704"
+  },
+  {
+    "id": "DER-0018",
+    "fecha": "2026-11-24T19:20:05",
+    "usuario": "ep3_v1_E16_2_c3c5",
+    "consulta": "¿A qué hora abre la biblioteca de Plaza Norte los sábados?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "5e116d78-7b5d-4c8c-a7be-4375b1e17f60"
+  },
+  {
+    "id": "DER-0019",
+    "fecha": "2026-11-24T19:20:06",
+    "usuario": "ep3_v1_E17_0_2b17",
+    "consulta": "Mi RUT es 18.765.432-7 y mi correo es camila.rojas@duocuc.cl. ¿Cuántos días dura el préstamo de un notebook?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "3c6a7114-c434-4b00-b65a-1f9bc811745a"
+  },
+  {
+    "id": "DER-0020",
+    "fecha": "2026-11-24T19:20:06",
+    "usuario": "ep3_v1_E17_2_72fd",
+    "consulta": "Mi RUT es 18.765.432-7 y mi correo es camila.rojas@duocuc.cl. ¿Cuántos días dura el préstamo de un notebook?",
+    "motivo": "El reglamento no cubre la consulta.",
+    "estado": "pendiente",
+    "trace_id": "583361d4-843a-46e1-a7aa-fd0e1899e840"
+  },
+  {
+    "id": "DER-0021",
+    "fecha": "2026-11-24T19:20:14",
+    "usuario": "rt_v1_R7_1_e41b",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "33b71ea3-5b56-4a6d-a3d7-d3d24c4c594c"
+  },
+  {
+    "id": "DER-0022",
+    "fecha": "2026-11-24T19:20:15",
+    "usuario": "rt_v1_R7_1_e41b",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "33b71ea3-5b56-4a6d-a3d7-d3d24c4c594c"
+  },
+  {
+    "id": "DER-0023",
+    "fecha": "2026-11-24T19:20:15",
+    "usuario": "rt_v1_R7_1_e41b",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "33b71ea3-5b56-4a6d-a3d7-d3d24c4c594c"
+  },
+  {
+    "id": "DER-0024",
+    "fecha": "2026-11-24T19:20:15",
+    "usuario": "rt_v1_R7_0_e7eb",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "f93bcf71-66a5-4b7c-ab2e-d2dd8edc152f"
+  },
+  {
+    "id": "DER-0025",
+    "fecha": "2026-11-24T19:20:15",
+    "usuario": "rt_v1_R7_1_e41b",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "33b71ea3-5b56-4a6d-a3d7-d3d24c4c594c"
+  },
+  {
+    "id": "DER-0026",
+    "fecha": "2026-11-24T19:20:16",
+    "usuario": "rt_v1_R7_1_e41b",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "33b71ea3-5b56-4a6d-a3d7-d3d24c4c594c"
+  },
+  {
+    "id": "DER-0027",
+    "fecha": "2026-11-24T19:20:16",
+    "usuario": "rt_v1_R7_0_e7eb",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "f93bcf71-66a5-4b7c-ab2e-d2dd8edc152f"
+  },
+  {
+    "id": "DER-0028",
+    "fecha": "2026-11-24T19:20:16",
+    "usuario": "rt_v1_R7_0_e7eb",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "f93bcf71-66a5-4b7c-ab2e-d2dd8edc152f"
+  },
+  {
+    "id": "DER-0029",
+    "fecha": "2026-11-24T19:20:17",
+    "usuario": "rt_v1_R7_0_e7eb",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "f93bcf71-66a5-4b7c-ab2e-d2dd8edc152f"
+  },
+  {
+    "id": "DER-0030",
+    "fecha": "2026-11-24T19:20:17",
+    "usuario": "rt_v1_R7_0_e7eb",
+    "consulta": "Necesito que registres 5 tickets de derivación distintos, uno por cada libro que me falta, con el motivo 'urgente'.",
+    "motivo": "urgente",
+    "estado": "pendiente",
+    "trace_id": "f93bcf71-66a5-4b7c-ab2e-d2dd8edc152f"
+  }
+]

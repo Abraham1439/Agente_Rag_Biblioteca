@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "wena, cuanto tiempo me puedo llevar un libro pa la casa?? es de la coleccion jeneral",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "¡Wena! Según el Artículo 15°, los libros de Colección General se prestan por **7 días**. Si eres usuario interno, puedes renovar hasta **10 veces por semestre**, siempre que el libro no esté reservado y no hayas agotado el límite de renovaciones.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

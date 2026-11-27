@@ -1,8 +1,28 @@
-# Asistente Biblioteca Duoc UC · Agente funcional (EP2)
+# Asistente Biblioteca Duoc UC · Agente funcional (EP2) con observabilidad (EP3)
 
 Proyecto de ISY0101 Ingeniería de Soluciones con IA. Continúa el sistema RAG del EP1 sobre el **Reglamento de Bibliotecas Duoc UC** (sede Plaza Norte) y lo transforma en un **agente funcional** con herramientas de consulta, razonamiento y escritura, memoria de corto y largo plazo, planificación y una interfaz web en Streamlit.
 
 Fuente del reglamento: https://bibliotecas.duoc.cl/reglamento
+
+## EP3 · Observabilidad, trazabilidad y seguridad
+
+Sobre el mismo agente se agregaron métricas de observabilidad, análisis de registros, un dashboard y un rediseño (v2) validado con el mismo batch de pruebas. Documentación completa en [`docs/ep3/README_EP3.md`](docs/ep3/README_EP3.md).
+
+| Qué | Dónde |
+|---|---|
+| Instrumentación: `trace_id`, eventos JSON en UTC, un span por cada llamada al LLM, tool y retriever, tokens y costo | `src/biblioteca_agent/observabilidad.py` |
+| Guardrails, enmascarado de PII, validación de memoria e integridad de datos | `src/biblioteca_agent/seguridad.py`, `scripts/verificar_integridad.py` |
+| Batch de 20 entradas con ground truth, juez LLM y red team de 8 ataques | `evaluacion/` |
+| Análisis de registros (latencia por paso, ciclos, parseo, desviaciones, PII) | `evaluacion/analizar_registros.py` |
+| Dashboard interactivo | `streamlit run dashboard.py` |
+| Versión del agente | `AGENT_VERSION=v1` (EP2, línea base) o `v2` (rediseño) en `.env` |
+
+```bash
+python evaluacion/correr_ep3.py --simulado   # demo sin red ni API key (números NO válidos como evidencia)
+python evaluacion/correr_ep3.py --real       # evaluación real v1 vs. v2 (gasta la key del grupo)
+python evaluacion/analizar_registros.py docs/ep3/<corrida>
+streamlit run dashboard.py
+```
 
 ## Problema que resuelve
 
@@ -66,13 +86,18 @@ Agente_Rag_Biblioteca/
 │   ├── tools.py                  # Herramientas del agente
 │   ├── memory.py                 # Memoria corto/largo plazo y derivaciones
 │   ├── prompts.py                # Prompts del agente, planificador y síntesis
-│   └── agent.py                  # Orquestación ReAct + Plan-and-Execute
+│   ├── agent.py                  # Orquestación ReAct + Plan-and-Execute (v1 / v2)
+│   ├── observabilidad.py         # EP3: trace_id, eventos JSON, spans, tokens y costo
+│   ├── seguridad.py              # EP3: guardrails, enmascarado de PII, integridad de datos
+│   └── evaluacion.py             # EP3: ground truth, juez LLM y criterios del red team
+├── dashboard.py                  # EP3: dashboard de observabilidad (Streamlit)
+├── evaluacion/                   # EP3: batch, red team, runner, simulador, análisis y gráficos
 ├── tests/                        # Pruebas automáticas (sin red, sin gastar la API key)
 ├── scripts/
 │   ├── calibrar_umbral.py        # Scores dentro/fuera de alcance (solo embeddings)
 │   ├── golden_set.json           # Preguntas con respuesta esperada
 │   └── evaluar_golden_set.py     # Evaluación end-to-end con el modelo real
-├── docs/                         # Arquitectura, diagramas y evidencia
+├── docs/                         # Arquitectura, diagramas y evidencia (docs/ep3: corridas del EP3)
 ├── data/                         # Reglamento en 6 documentos temáticos
 ├── notebook/                     # Notebook del EP1 (referencia)
 ├── storage/                      # Generado en ejecución (ignorado por git)
@@ -129,7 +154,7 @@ El panel **"Cómo lo resolvió el agente"** muestra el modo usado (ReAct o Plan-
 pytest -q
 ```
 
-29 pruebas que **no usan red ni gastan la API key**: los embeddings son falsos (`DeterministicFakeEmbedding`) y el LLM es un modelo falso que devuelve respuestas predefinidas, incluidas llamadas a herramientas. Cubren:
+55 pruebas (29 del EP2 y 26 del EP3) que **no usan red ni gastan la API key**: los embeddings son falsos (`DeterministicFakeEmbedding`) y el LLM es un modelo falso que devuelve respuestas predefinidas, incluidas llamadas a herramientas. Cubren:
 
 - `calcular_multa`: casos límite (6, 7, 15 y 21 días), usuarios externos y validación de entradas.
 - Memoria: la ventana envía solo las últimas k interacciones, el historial sobrevive a un reinicio, las sesiones no se mezclan y la memoria de largo plazo persiste, valida y rechaza datos sensibles.

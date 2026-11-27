@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el **Artículo 6°**, como titulado puedes consultar los recursos físicos de Duoc UC **solo en sala**, después de actualizar tu cuenta en el portal de titulados y acreditar tu identidad. Por lo tanto, no puedes pedir libros físicos para llevarlos a casa.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

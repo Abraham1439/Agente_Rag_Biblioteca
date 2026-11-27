@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "¿Puedo instalar mis propios juegos en los lentes de realidad virtual?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el Artículo 32°, los lentes VR podrán ser utilizados con fines académicos y recreativos, siempre que las aplicaciones utilizadas hayan sido previamente definidas, autorizadas e instaladas por Biblioteca Duoc UC. Además, puedes hacer el trámite en línea las 24 horas desde la app de Duoc.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

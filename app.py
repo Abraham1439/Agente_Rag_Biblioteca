@@ -36,8 +36,17 @@ def mostrar_tools(llamadas: list[dict]) -> None:
 
 
 def mostrar_traza(turno: dict) -> None:
-    titulo = "🗺️ Plan-and-Execute" if turno["modo"] == "plan" else "🔁 ReAct"
+    titulo = {"plan": "🗺️ Plan-and-Execute", "bloqueado": "🛡️ Bloqueado por guardrail"}.get(turno["modo"], "🔁 ReAct")
     with st.expander(f"Cómo lo resolvió el agente · {titulo}"):
+        m = turno.get("metricas") or {}
+        if turno.get("trace_id"):  # EP3: observabilidad del turno
+            st.caption(f"`trace_id {turno['trace_id']}` · versión {turno.get('version')} · "
+                       f"{turno.get('latencia_s', 0):.2f} s · {m.get('llamadas_llm', 0)} llamadas al LLM · "
+                       f"{m.get('tokens_entrada', 0) + m.get('tokens_salida', 0)} tokens · "
+                       f"US$ {m.get('costo_usd', 0):.5f}"
+                       + (f" · guardrails: {', '.join(turno['guardrails'])}" if turno.get("guardrails") else ""))
+        if turno.get("error"):
+            st.warning(f"Error técnico registrado: {turno['error']}")
         if turno.get("motivo_plan"):
             st.caption(f"Decisión del planificador: {turno['motivo_plan']}")
         if turno["modo"] == "plan":
@@ -49,7 +58,7 @@ def mostrar_traza(turno: dict) -> None:
                     st.caption(f"Resultado: {paso['resultado']}")
         elif turno["tools"]:
             mostrar_tools(turno["tools"])
-        else:
+        elif turno["modo"] != "bloqueado":
             st.caption("Respondió sin llamar herramientas.")
 
 
@@ -73,10 +82,10 @@ with st.sidebar:
         st.session_state.session_id = uuid.uuid4().hex[:8]
         st.session_state.trazas = {}
         st.rerun()
-    st.caption(f"Sesión: `{st.session_state.session_id}`")
+    st.caption(f"Sesión: `{st.session_state.session_id}` · agente {settings.agent_version}")
 
     st.subheader("Memoria de largo plazo")
-    lt = LongTermMemory(settings.long_term_path)
+    lt = LongTermMemory(settings.long_term_path, validar_valores=settings.agent_version == "v2")
     datos = lt.obtener(usuario)
     if datos:
         st.json(datos)

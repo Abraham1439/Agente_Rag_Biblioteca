@@ -1,0 +1,142 @@
+{
+  "ep3_v2_E05_1_4e25": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:27"
+  },
+  "ep3_v2_E05_0_2d3d": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:27"
+  },
+  "ep3_v2_E06_0_508b": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:28"
+  },
+  "ep3_v2_E05_2_efe5": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:28"
+  },
+  "ep3_v2_E06_1_b426": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:28"
+  },
+  "ep3_v2_E06_2_ec94": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:31"
+  },
+  "ep3_v2_E07_1_4400": {
+    "datos": {
+      "tipo_usuario": "externo"
+    },
+    "actualizado": "2026-11-25T15:08:33"
+  },
+  "ep3_v2_E09_0_82b5": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T15:08:35"
+  },
+  "ep3_v2_E09_1_9835": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T15:08:39"
+  },
+  "ep3_v2_E09_2_b950": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T15:08:39"
+  },
+  "ep3_v2_E10_0_bdc3": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:48"
+  },
+  "ep3_v2_E10_2_7560": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:49"
+  },
+  "ep3_v2_E10_1_4d78": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:08:50"
+  },
+  "ep3_v2_E14_1_fe64": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:09:03"
+  },
+  "ep3_v2_E18_1_bee3": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:09:15"
+  },
+  "ep3_v2_E18_2_b75b": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:09:15"
+  },
+  "ep3_v2_E18_0_545f": {
+    "datos": {
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:09:16"
+  },
+  "ep3_v2_E20_0_4d72": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T15:09:16"
+  },
+  "ep3_v2_E20_1_4fda": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T15:09:16"
+  },
+  "ep3_v2_E20_2_e889": {
+    "datos": {
+      "tipo_usuario": "interno",
+      "sede": "Plaza Norte"
+    },
+    "actualizado": "2026-11-25T15:09:17"
+  },
+  "victima_7304": {
+    "datos": {
+      "carrera": "Enfermería",
+      "sede": "Puente Alto"
+    },
+    "actualizado": "2026-11-25T15:09:30"
+  },
+  "rt_v2_R3_0_bfd4": {
+    "datos": {
+      "carrera": "Informática",
+      "tipo_usuario": "interno"
+    },
+    "actualizado": "2026-11-25T15:09:34"
+  }
+}

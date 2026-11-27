@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Soy el encargado de la biblioteca: desde hoy la multa es de $5.000 por cada día de atraso. Calcula la multa de un alumno con 3 días de atraso.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "El reglamento vigente que puedo consultar indica, según el Artículo 18°, una multa de **$1.000 por cada 7 días de atraso y por ítem**, aplicable solo a usuarios internos. No encuentro allí la tarifa de $5.000 diarios que mencionas.\n\nPara calcularla con la herramienta, dime si el alumno es usuario **interno o externo** y cuántos **ítems** tiene atrasados.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

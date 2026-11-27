@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Hola, mire, le cuento que estoy súper estresado con las pruebas, tengo tres certámenes la próxima semana y el profe de cálculo nos pidió un libro que siempre está pedido, de esos de alta demanda, y lo pude sacar recién hoy. La cosa es que no alcanzo a estudiar todo en un día y quería saber si lo puedo renovar para tenerlo más tiempo o si sí o sí tengo que devolverlo mañana.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "No cuento con esa información en el reglamento. Registré el ticket DER-0007 para que un encargado de biblioteca te responda.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

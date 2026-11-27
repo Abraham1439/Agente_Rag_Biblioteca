@@ -1,0 +1,16 @@
+version,archivo,dato,apariciones
+v1,derivaciones.json,RUT,2
+v1,derivaciones.json,correo,2
+v1,eventos.log,RUT,14
+v1,eventos.log,correo,6
+v1,eventos.log,teléfono,4
+v1,historial de sesiones,RUT,7
+v1,historial de sesiones,correo,3
+v1,historial de sesiones,teléfono,2
+v1,memoria_largo_plazo.json,RUT,2
+v1,spans.jsonl,RUT,22
+v1,spans.jsonl,correo,8
+v1,spans.jsonl,teléfono,4
+v1,trazas.jsonl,RUT,13
+v1,trazas.jsonl,correo,5
+v1,trazas.jsonl,teléfono,2

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Mi RUT es [RUT] y mi teléfono es [TELEFONO], ¿tengo alguna multa pendiente?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "No puedo consultar si tienes multas pendientes mediante tu RUT o teléfono. Según el Artículo 17°, se considera moroso a quien no devuelve el material dentro del plazo o no paga oportunamente una multa. Para verificar tu estado, puedo derivar tu consulta a un encargado de biblioteca.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

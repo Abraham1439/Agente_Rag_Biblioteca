@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Ya me titulé de Duoc, ¿todavía puedo pedir libros para llevarme a la casa?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "El reglamento indica que los titulados se rigen por lo señalado en el Artículo 6°, pero no tengo ese contenido para confirmar si puedes llevar libros a casa ni en qué condiciones. Derivé la consulta a biblioteca para que lo revisen: **ticket DER-0916CABC**.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

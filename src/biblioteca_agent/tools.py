@@ -11,10 +11,17 @@ docstrings describen con precisión cuándo usar cada una.
 """
 from __future__ import annotations
 
+import contextvars
+
 from langchain_core.tools import BaseTool, tool
 
 from .memory import DATOS_PERMITIDOS, DerivacionStore, LongTermMemory
+from .observabilidad import TRACE_ID
 from .rag import ReglamentoRetriever
+
+# Cuántas veces puede llamarse cada tool de escritura en un mismo turno (agente v2).
+LIMITES_ESCRITURA = {"registrar_derivacion": 1, "guardar_dato_usuario": 5}
+USOS_ESCRITURA: contextvars.ContextVar[dict | None] = contextvars.ContextVar("usos_escritura", default=None)
 
 MULTA_POR_BLOQUE = 1000  # Art. 18°: $1.000 por cada 7 días de atraso, por ítem
 DIAS_POR_BLOQUE = 7
@@ -50,8 +57,21 @@ def calcular_multa_atraso(dias_atraso: int, cantidad_items: int, tipo_usuario: s
 
 
 def build_tools(usuario: str, retriever: ReglamentoRetriever, long_term: LongTermMemory,
-                derivaciones: DerivacionStore) -> list[BaseTool]:
-    """Crea las tools para un usuario concreto (las de escritura necesitan saber quién es)."""
+                derivaciones: DerivacionStore, limitar_escritura: bool = False) -> list[BaseTool]:
+    """Crea las tools para un usuario concreto (las de escritura necesitan saber quién es).
+
+    EP3 · `limitar_escritura` (agente v2): tope por turno para las tools que escriben, aplicado en
+    código y no en el prompt (agencia excesiva, OWASP LLM06): 1 ticket y 5 datos de memoria por
+    turno. En v1 el único freno es que el modelo decida no repetir la llamada."""
+
+    def _cupo(nombre: str) -> bool:
+        if not limitar_escritura:
+            return True
+        usos = USOS_ESCRITURA.get()
+        if usos is None:
+            return True
+        usos[nombre] = usos.get(nombre, 0) + 1
+        return usos[nombre] <= LIMITES_ESCRITURA[nombre]
 
     @tool
     def buscar_reglamento(consulta: str) -> str:
@@ -93,6 +113,8 @@ def build_tools(usuario: str, retriever: ReglamentoRetriever, long_term: LongTer
         futuras conversaciones. Úsala cuando el usuario mencione alguno de estos datos:
         nombre, tipo_usuario ('interno' o 'externo'), sede, carrera o preferencia_respuesta.
         No guardes RUT, correos, teléfonos ni otros datos personales sensibles."""
+        if not _cupo("guardar_dato_usuario"):
+            return "LIMITE: ya se guardaron los datos permitidos en esta consulta."
         try:
             datos = long_term.guardar(usuario, dato, valor)
         except ValueError as exc:
@@ -105,7 +127,10 @@ def build_tools(usuario: str, retriever: ReglamentoRetriever, long_term: LongTer
         Úsala cuando buscar_reglamento devuelva SIN_RESPALDO, cuando el reglamento indique que
         la decisión corresponde al encargado, o cuando el usuario pida hablar con una persona.
         Devuelve el número de ticket para informárselo al usuario."""
-        ticket = derivaciones.registrar(usuario, consulta, motivo)
+        if not _cupo("registrar_derivacion"):
+            return ("LIMITE: ya se registró un ticket en esta consulta; un encargado revisará todo lo que "
+                    "el usuario pidió. No registres más tickets.")
+        ticket = derivaciones.registrar(usuario, consulta, motivo, trace_id=TRACE_ID.get())
         return f"TICKET {ticket['id']} registrado con estado '{ticket['estado']}'."
 
     return [buscar_reglamento, calcular_multa, guardar_dato_usuario, registrar_derivacion]

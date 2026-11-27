@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "¿Puedo comer dentro de las salas de estudio?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Según el Artículo 26°, la reserva de salas de estudio deberá realizarse exclusivamente a través del Portal de Bibliotecas, utilizando las credenciales institucionales (usuario y contraseña Duoc UC). Además, puedes hacer el trámite en línea las 24 horas desde la app de Duoc.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

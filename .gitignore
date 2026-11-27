@@ -226,3 +226,6 @@ __marimo__/
 
 # Datos generados por el agente (historiales, memoria, tickets, índice, trazas)
 storage/
+
+# EP3: los registros de las corridas de evaluación SÍ se versionan (son la evidencia del informe)
+!docs/ep3/**/*.log

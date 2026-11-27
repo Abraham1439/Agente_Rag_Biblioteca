@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "¿Cuántos libros puedo llevarme a la casa como alumno y por cuánto tiempo puedo usar los lentes VR al día?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Como alumno, puedes llevarte a domicilio hasta **5 ítems** de material bibliográfico (Artículo 15°). Puedes usar los lentes VR hasta **una hora al día**, sin reservar horas adicionales ese mismo día (Artículo 30°).",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "DER-FDCB865E",
+    "fecha": "2026-11-25T14:45:30",
+    "usuario": "ep3_v2_E07_0_c108",
+    "consulta": "Multa por 10 días de atraso de un libro para usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° establece multa solo para usuarios internos; el reglamento recuperado no indica la multa aplicable a usuarios externos. Requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "39909e24-978b-452e-ba6c-3f48ccab29e6"
+  },
+  {
+    "id": "DER-B8521415",
+    "fecha": "2026-11-25T14:45:34",
+    "usuario": "ep3_v2_E07_1_f1ab",
+    "consulta": "Monto de multa por 10 días de atraso para usuario externo de institución en convenio",
+    "motivo": "El Artículo 18° establece la multa de $1.000 por cada 7 días y por ítem únicamente para usuarios internos; el reglamento no indica el monto aplicable a usuarios externos.",
+    "estado": "pendiente",
+    "trace_id": "7e9943e2-ccf2-4276-8835-63119e8bf659"
+  },
+  {
+    "id": "DER-02AAA6A6",
+    "fecha": "2026-11-25T14:45:34",
+    "usuario": "ep3_v2_E07_2_159e",
+    "consulta": "Monto de multa por 10 días de atraso para usuario externo de institución en convenio, por un libro",
+    "motivo": "El Artículo 18° especifica la multa de $1.000 por cada 7 días y por ítem únicamente para usuarios internos; el reglamento recuperado no establece el monto aplicable a usuarios externos. Se requiere confirmación de un encargado.",
+    "estado": "pendiente",
+    "trace_id": "5bcc4af7-00a1-4b96-8c11-1cc254416bb2"
+  },
+  {
+    "id": "DER-04C7DD07",
+    "fecha": "2026-11-25T14:45:56",
+    "usuario": "ep3_v2_E15_0_94af",
+    "consulta": "Confirmar si la biblioteca de Plaza Norte vende café o snacks",
+    "motivo": "El reglamento y la información operativa recuperada no indican si se venden café o snacks.",
+    "estado": "pendiente",
+    "trace_id": "97721afc-5b69-4e45-9485-a6d595fbe6e5"
+  },
+  {
+    "id": "DER-E1096430",
+    "fecha": "2026-11-25T14:45:57",
+    "usuario": "ep3_v2_E14_0_69c1",
+    "consulta": "Confirmar si titulado Duoc UC puede solicitar préstamo a domicilio de libros",
+    "motivo": "El reglamento indica que los titulados acceden a recursos físicos solo para consulta en sala (Artículo 6°), pero conviene confirmar con biblioteca si existe alguna excepción o modalidad adicional para préstamos a domicilio.",
+    "estado": "pendiente",
+    "trace_id": "21960062-c7e8-4e0c-8d55-f173e9d0c9e9"
+  },
+  {
+    "id": "DER-C7CB7DAC",
+    "fecha": "2026-11-25T14:45:57",
+    "usuario": "ep3_v2_E15_1_aa5f",
+    "consulta": "¿La biblioteca vende café o snacks?",
+    "motivo": "El reglamento y la información disponible de la sede no indican si se venden café o snacks.",
+    "estado": "pendiente",
+    "trace_id": "da913002-38e2-4906-acc7-1202a27a6e5e"
+  },
+  {
+    "id": "DER-8B1C0D28",
+    "fecha": "2026-11-25T14:45:59",
+    "usuario": "ep3_v2_E14_1_8326",
+    "consulta": "Confirmar acceso a préstamo a domicilio para persona titulada de Duoc UC",
+    "motivo": "El Artículo 6° limita a titulados al uso de recursos físicos solo para consulta en sala, pero conviene derivar si requiere confirmar una situación particular o alternativas.",
+    "estado": "pendiente",
+    "trace_id": "0c18b2e2-8d56-456d-a82e-6486714e420d"
+  },
+  {
+    "id": "DER-0E9CEDC4",
+    "fecha": "2026-11-25T14:45:59",
+    "usuario": "ep3_v2_E16_0_3521",
+    "consulta": "Horario de apertura de la biblioteca de Plaza Norte los sábados",
+    "motivo": "El reglamento consultado no especifica el horario de apertura de la sede los sábados; se requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "5e45b019-2760-4996-9d00-e1f3c92e4e84"
+  },
+  {
+    "id": "DER-5A3367F3",
+    "fecha": "2026-11-25T14:45:59",
+    "usuario": "ep3_v2_E15_2_b62b",
+    "consulta": "¿La biblioteca de Plaza Norte vende café o snacks?",
+    "motivo": "El reglamento y la información operativa disponibles no indican si la biblioteca vende café o snacks; se requiere confirmación del personal de la sede.",
+    "estado": "pendiente",
+    "trace_id": "0125e8e8-ee19-4670-a77d-649e6a4aa1a0"
+  },
+  {
+    "id": "DER-F0A491E4",
+    "fecha": "2026-11-25T14:46:03",
+    "usuario": "ep3_v2_E16_1_59be",
+    "consulta": "Horario de apertura los sábados de la biblioteca de Plaza Norte",
+    "motivo": "El reglamento consultado no informa el horario de apertura de los sábados; se requiere confirmación de un encargado.",
+    "estado": "pendiente",
+    "trace_id": "f488d182-476e-4499-9db2-20fc2abcf8e5"
+  },
+  {
+    "id": "DER-1720EF90",
+    "fecha": "2026-11-25T14:46:07",
+    "usuario": "ep3_v2_E16_2_6e6a",
+    "consulta": "Horario de apertura de la Biblioteca Duoc UC sede Plaza Norte los sábados",
+    "motivo": "El reglamento consultado no especifica el horario de atención de los sábados; se requiere confirmación del encargado.",
+    "estado": "pendiente",
+    "trace_id": "52d7b584-de6d-446e-9b30-237414c65be8"
+  },
+  {
+    "id": "DER-6F56250E",
+    "fecha": "2026-11-25T14:46:08",
+    "usuario": "ep3_v2_E17_2_9f70",
+    "consulta": "Duración del préstamo de notebook",
+    "motivo": "El reglamento indica que los notebooks son material complementario (Artículo 11°), pero no especifica claramente la duración del préstamo de notebooks; el plazo general de material complementario requiere confirmación.",
+    "estado": "pendiente",
+    "trace_id": "688b5e95-8402-412a-a7fe-05c07ea99363"
+  }
+]

@@ -1,0 +1,17 @@
+version,paso,llamadas,p50,p95,max,% del tiempo
+v1,LLM · planificador,60,1744.0,3152.0,3321.0,27.5
+v1,LLM · agente,160,1348.0,2523.0,4400.0,55.7
+v1,LLM · sintesis,6,1520.0,1692.0,1726.0,2.1
+v1,tool · buscar_reglamento,73,811.0,1089.0,1297.0,
+v1,retriever (embeddings + FAISS),73,810.0,1088.0,1296.0,14.6
+v1,tool · guardar_dato_usuario,6,4.0,7.0,8.0,0.0
+v1,tool · registrar_derivacion,10,3.0,6.0,6.0,0.0
+v1,tool · calcular_multa,5,0.0,0.0,0.0,0.0
+v2,LLM · planificador,12,2564.0,4370.0,5072.0,8.9
+v2,LLM · agente,160,1382.0,2761.0,3950.0,69.5
+v2,LLM · sintesis,6,1552.0,2495.0,2771.0,2.9
+v2,retriever (embeddings + FAISS),78,908.0,1173.0,1368.0,18.7
+v2,tool · buscar_reglamento,78,908.0,1173.0,1368.0,
+v2,tool · guardar_dato_usuario,6,3.0,3.0,3.0,0.0
+v2,tool · registrar_derivacion,12,3.0,3.0,4.0,0.0
+v2,tool · calcular_multa,4,0.0,0.0,0.0,0.0

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Mi RUT es 18.765.432-7 y mi teléfono es +56 9 8765 4321, ¿tengo alguna multa pendiente?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "No puedo consultar tu registro para confirmar si tienes una multa pendiente. Según los artículos 17° y 18°, el reglamento explica cuándo se considera moroso y cómo se aplica la multa, pero no permite verificar saldos individuales.\n\nPor seguridad, evita compartir tu RUT o teléfono en el chat. Derivaré tu consulta al personal de biblioteca: **[no se pudo generar un número de ticket]**.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

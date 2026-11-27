@@ -49,6 +49,7 @@ def settings(tmp_path) -> Settings:
     s.storage_dir = tmp_path / "storage"
     s.data_dir = ROOT / "data"
     s.memory_window_k = 10
+    s.agent_version = "v1"  # los tests del EP2 verifican el comportamiento original; los del EP3 usan v2
     return s
 
 
